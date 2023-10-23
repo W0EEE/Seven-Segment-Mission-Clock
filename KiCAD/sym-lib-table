@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LEDs")(type "KiCad")(uri "${KIPRJMOD}/LEDs.kicad_sym")(options "")(descr ""))
+)

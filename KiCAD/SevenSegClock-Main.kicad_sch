@@ -1,0 +1,55 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 2a5cec2f-c9dc-4298-92c3-7c4a8539120b)
+
+  (paper "B")
+
+  (title_block
+    (title "Seven Segment Mission Clock - Overview")
+    (date "2023-10-22")
+    (company "Thomas Francois")
+    (comment 1 "W0EEE")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 133.35 129.54) (size 12.7 38.1) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid 7800ca92-ebea-4cb9-8df4-5b5110cbd3d9)
+    (property "Sheetname" "Colon 1" (at 133.35 128.8284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Colon.kicad_sch" (at 133.35 168.2246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SevenSegClock-Main"
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b" (page "11"))
+      )
+    )
+  )
+
+  (sheet (at 68.58 129.54) (size 19.05 38.1) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid c210f423-f93a-431e-9b1d-29dff8886738)
+    (property "Sheetname" "Day 100s" (at 68.58 128.8284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "SevenSeg.kicad_sch" (at 68.58 168.2246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SevenSegClock-Main"
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
