@@ -284,6 +284,41 @@
         )
       )
     )
+    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (at 0 6.35 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "mounting hole" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MountingHole_Pad_0_1"
+        (circle (center 0 1.27) (radius 1.27)
+          (stroke (width 1.27) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "MountingHole_Pad_1_1"
+        (pin input line (at 0 -2.54 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Regulator_Linear:AZ1117-5.0" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -3.81 3.175 0)
         (effects (font (size 1.27 1.27)))
@@ -346,6 +381,12 @@
   )
   (junction (at 147.32 187.96) (diameter 0) (color 0 0 0 1)
     (uuid 697989e6-7145-4857-98ee-898a3322a27d)
+  )
+  (junction (at 154.94 124.46) (diameter 0) (color 0 0 0 1)
+    (uuid 8522dff7-4f79-4110-bf7a-8039043bcb17)
+  )
+  (junction (at 180.34 124.46) (diameter 0) (color 0 0 0 1)
+    (uuid 9255a28c-1eb9-4a1e-961e-4d013f486c03)
   )
   (junction (at 129.54 87.63) (diameter 0) (color 0 0 0 0)
     (uuid 9891e1e0-6a07-4b8c-99a1-6483603fa622)
@@ -439,6 +480,10 @@
     (stroke (width 0) (type default))
     (uuid 58247233-708e-4b9c-9716-ea44c4b88c84)
   )
+  (wire (pts (xy 191.135 124.46) (xy 180.34 124.46))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 5d6f5752-058b-48b8-8cc4-2d89e3eb3222)
+  )
   (wire (pts (xy 121.92 86.36) (xy 121.92 95.25))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 61ecfade-e7cf-44a3-bca1-fd25c5284b37)
@@ -478,6 +523,10 @@
   (wire (pts (xy 147.32 83.82) (xy 147.32 87.63))
     (stroke (width 0) (type default))
     (uuid 9eeff065-c4d5-4c23-91a4-78ddbdbf26e2)
+  )
+  (wire (pts (xy 154.94 124.46) (xy 180.34 124.46))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid a29baabb-aa59-4a26-80e6-1c829abaae96)
   )
   (wire (pts (xy 129.54 83.82) (xy 129.54 87.63))
     (stroke (width 0) (type default))
@@ -2220,7 +2269,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 161.29 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dc5aca8-3d97-4886-9bf9-7be29aee4bc5)
-    (property "Reference" "C208" (at 164.211 180.3313 0)
+    (property "Reference" "C?" (at 164.211 180.3313 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 164.211 182.2523 0)
@@ -2237,10 +2286,38 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C208") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "C1102") (unit 1)
+          (reference "C304") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 191.135 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3f9c8adf-d9d3-4f27-9ed0-cde4ea39adc0)
+    (property "Reference" "H202" (at 193.675 120.0063 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "M4" (at 193.675 121.9273 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" (at 191.135 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 191.135 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 34f3f60c-768b-4ab6-a09d-d0d36c3794d7))
+    (instances
+      (project "SevenSegClock-Main"
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
+          (reference "H202") (unit 1)
+        )
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
+          (reference "H302") (unit 1)
         )
       )
     )
@@ -2249,7 +2326,7 @@
   (symbol (lib_id "Regulator_Linear:AZ1117-5.0") (at 147.32 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4189ffff-5051-44ea-87c1-8e4cc6b82036)
-    (property "Reference" "U201" (at 147.32 165.2651 0)
+    (property "Reference" "U?" (at 147.32 165.2651 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AZ1117-5.0" (at 147.32 167.1861 0)
@@ -2267,10 +2344,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "U201") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "U1101") (unit 1)
+          (reference "U301") (unit 1)
         )
       )
     )
@@ -2279,7 +2356,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 138.43 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5cf050a1-52af-4917-b5a7-1203059fa526)
-    (property "Reference" "D201" (at 138.43 78.74 0)
+    (property "Reference" "D?" (at 138.43 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 138.4501 85.7303 0)
@@ -2300,10 +2377,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "D1101") (unit 1)
+          (reference "D301") (unit 1)
         )
       )
     )
@@ -2312,13 +2389,13 @@
   (symbol (lib_id "Device:C_Small") (at 148.59 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 685690ca-1948-415a-abca-91a8c39e910e)
-    (property "Reference" "C202" (at 150.9141 55.2426 0)
+    (property "Reference" "C?" (at 150.9141 55.2426 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 150.9141 57.1636 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 148.59 55.88 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 148.59 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 148.59 55.88 0)
@@ -2329,10 +2406,38 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C202") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "C1104") (unit 1)
+          (reference "C303") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 180.34 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7e08053a-81dd-4685-ab96-6eb44bef1e97)
+    (property "Reference" "H201" (at 182.88 120.0063 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "M4" (at 182.88 121.9273 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" (at 180.34 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 180.34 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 171df894-cf4d-4703-8f53-27bfdc90e6f1))
+    (instances
+      (project "SevenSegClock-Main"
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
+          (reference "H201") (unit 1)
+        )
+        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
+          (reference "H301") (unit 1)
         )
       )
     )
@@ -2341,7 +2446,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 138.43 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8be5ecb1-b88e-4536-b0d6-f864b1f3e5c1)
-    (property "Reference" "D201" (at 138.43 107.95 0)
+    (property "Reference" "D?" (at 138.43 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 138.4501 114.9403 0)
@@ -2362,10 +2467,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "D1102") (unit 1)
+          (reference "D302") (unit 1)
         )
       )
     )
@@ -2374,7 +2479,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 107.95 83.82 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a2c214e6-7441-4b20-a3bb-59d4d452709d)
-    (property "Reference" "J202" (at 110.49 76.2 0)
+    (property "Reference" "J?" (at 110.49 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Output" (at 110.49 78.121 0)
@@ -2392,10 +2497,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "J202") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "J1102") (unit 1)
+          (reference "J301") (unit 1)
         )
       )
     )
@@ -2404,7 +2509,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 168.91 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb7d3919-326c-4cf7-9b36-549559298233)
-    (property "Reference" "J202" (at 166.37 76.2 0)
+    (property "Reference" "J?" (at 166.37 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Output" (at 166.37 78.121 0)
@@ -2422,10 +2527,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "J202") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "J1101") (unit 1)
+          (reference "J302") (unit 1)
         )
       )
     )
@@ -2434,7 +2539,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 133.35 181.61 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd3d1a3f-18b9-49e3-83e1-91be12d5838a)
-    (property "Reference" "C209" (at 130.429 180.3313 0)
+    (property "Reference" "C?" (at 130.429 180.3313 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 130.429 182.2523 0)
@@ -2451,10 +2556,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C209") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "C1101") (unit 1)
+          (reference "C301") (unit 1)
         )
       )
     )
@@ -2463,13 +2568,13 @@
   (symbol (lib_id "Device:C_Small") (at 135.89 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7d09efd-954a-4700-a935-fd9d65851166)
-    (property "Reference" "C201" (at 138.2141 55.2426 0)
+    (property "Reference" "C?" (at 138.2141 55.2426 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 138.2141 57.1636 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 135.89 55.88 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 135.89 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 135.89 55.88 0)
@@ -2480,10 +2585,10 @@
     (instances
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C201") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/7800ca92-ebea-4cb9-8df4-5b5110cbd3d9"
-          (reference "C1103") (unit 1)
+          (reference "C302") (unit 1)
         )
       )
     )
