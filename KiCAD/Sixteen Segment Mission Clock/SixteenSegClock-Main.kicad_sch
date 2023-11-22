@@ -424,6 +424,49 @@
         )
       )
     )
+    (symbol "Regulator_Linear:L7805" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -3.81 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "L7805" (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.635 -3.81 0)
+        (effects (font (size 1.27 1.27) italic) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" (at 0 -1.27 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "Voltage Regulator 1.5A Positive" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "TO?252* TO?263* TO?220*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "L7805_0_1"
+        (rectangle (start -5.08 1.905) (end 5.08 -5.08)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+      )
+      (symbol "L7805_1_1"
+        (pin power_in line (at -7.62 0 0) (length 2.54)
+          (name "IN" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 -7.62 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 7.62 0 180) (length 2.54)
+          (name "OUT" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
   (junction (at 107.95 31.75) (diameter 0) (color 0 0 0 0)
@@ -468,6 +511,12 @@
   (junction (at -365.76 132.715) (diameter 0) (color 0 0 0 0)
     (uuid 137e30b0-dc99-414b-9609-977f35b2f739)
   )
+  (junction (at 193.675 163.195) (diameter 0) (color 194 0 0 1)
+    (uuid 156a4df5-6502-4a4a-ad2a-58fe93593bbb)
+  )
+  (junction (at 162.56 44.45) (diameter 0) (color 0 0 0 1)
+    (uuid 182625cc-6504-486d-9121-60359d117617)
+  )
   (junction (at 263.525 152.4) (diameter 0) (color 0 0 0 0)
     (uuid 1908c3d6-891d-4dda-a04b-26217bf11e37)
   )
@@ -485,6 +534,9 @@
   )
   (junction (at 283.845 188.595) (diameter 0) (color 0 0 0 1)
     (uuid 27b88d6a-5ef5-454d-bc67-cf39a9ccb9ef)
+  )
+  (junction (at 128.905 46.355) (diameter 0) (color 194 0 0 1)
+    (uuid 2957970a-68df-4c4c-bbf0-ec382b50d48f)
   )
   (junction (at 100.33 71.755) (diameter 0) (color 0 0 0 1)
     (uuid 29e96db4-c8da-48ea-870e-ffce59464d93)
@@ -504,6 +556,9 @@
   (junction (at 214.63 148.59) (diameter 0) (color 0 0 0 0)
     (uuid 34da63a6-8b38-4665-afe9-c57baf62b7a5)
   )
+  (junction (at 255.905 44.45) (diameter 0) (color 0 0 0 1)
+    (uuid 34e52bb8-9167-4344-bf98-99dfa293a6c1)
+  )
   (junction (at 193.675 133.985) (diameter 0) (color 194 0 0 1)
     (uuid 354126d4-0281-4501-b638-d5c68749f9d2)
   )
@@ -521,6 +576,9 @@
   )
   (junction (at 222.25 17.145) (diameter 0) (color 194 0 0 1)
     (uuid 40aacbc3-0ac4-40bc-b07f-bcb4fe706cbf)
+  )
+  (junction (at 253.365 46.355) (diameter 0) (color 194 0 0 1)
+    (uuid 461a2953-836d-43e7-882b-4e6fcd981e63)
   )
   (junction (at -378.46 140.335) (diameter 0) (color 0 0 0 0)
     (uuid 463df291-0c15-4de4-abdb-c7cd055953bc)
@@ -591,6 +649,9 @@
   (junction (at 245.745 170.815) (diameter 0) (color 0 0 0 0)
     (uuid 70dc57ca-2e92-480f-96a1-7f9bf76a4225)
   )
+  (junction (at 160.02 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid 71d1fa6d-f809-43c1-9609-e56310ec298b)
+  )
   (junction (at 152.4 53.975) (diameter 0) (color 0 0 0 0)
     (uuid 73388844-76b6-4432-9679-e27f1ef3471c)
   )
@@ -612,8 +673,14 @@
   (junction (at -340.36 132.715) (diameter 0) (color 0 0 0 0)
     (uuid 809ea100-620f-4ca2-ac6a-afb424ba4185)
   )
+  (junction (at 97.79 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid 8214ae94-ea4f-4cc1-8bab-d59fe83a35f7)
+  )
   (junction (at 121.285 170.815) (diameter 0) (color 0 0 0 0)
     (uuid 84d46018-a123-453f-9cfe-f2d57b45b2a2)
+  )
+  (junction (at 222.25 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid 84dd257b-5e33-4f88-a094-ddea31e99716)
   )
   (junction (at 59.055 31.75) (diameter 0) (color 0 0 0 0)
     (uuid 8947aff9-b780-44c0-afaf-2fdcef80ad13)
@@ -629,6 +696,9 @@
   )
   (junction (at 214.63 170.815) (diameter 0) (color 0 0 0 0)
     (uuid 90f3f8da-66cc-454e-93f5-ad9742088764)
+  )
+  (junction (at 56.515 46.355) (diameter 0) (color 194 0 0 1)
+    (uuid 9346dbdb-4112-4ada-9db0-e97ef76cf089)
   )
   (junction (at -378.46 132.715) (diameter 0) (color 0 0 0 0)
     (uuid 937a9307-324d-4e7f-b06e-17d8ddda0944)
@@ -654,6 +724,9 @@
   (junction (at 121.285 53.975) (diameter 0) (color 0 0 0 0)
     (uuid 9d4e6557-4701-46b8-8dcb-c41869193379)
   )
+  (junction (at 100.33 44.45) (diameter 0) (color 0 0 0 1)
+    (uuid 9d69a9f6-21d0-4781-8331-b58d60d1c788)
+  )
   (junction (at 162.56 133.985) (diameter 0) (color 194 0 0 1)
     (uuid 9e020d31-3453-44e4-a425-9ae16f74841c)
   )
@@ -675,6 +748,12 @@
   (junction (at 66.675 188.595) (diameter 0) (color 0 0 0 1)
     (uuid a7284150-90fa-4eb2-bbb5-102cc7f33184)
   )
+  (junction (at 162.56 163.195) (diameter 0) (color 194 0 0 1)
+    (uuid a92ae8de-922c-4f69-b200-6b93eb78dc38)
+  )
+  (junction (at 100.33 163.195) (diameter 0) (color 194 0 0 1)
+    (uuid aa0a4302-3627-40d1-8462-aa05c2e23f77)
+  )
   (junction (at 152.4 35.56) (diameter 0) (color 0 0 0 0)
     (uuid aa3ba9c1-acc0-4382-a04b-c9a288f4198d)
   )
@@ -683,6 +762,9 @@
   )
   (junction (at -365.76 140.335) (diameter 0) (color 0 0 0 0)
     (uuid ac91b3cb-f100-498f-9792-2483731262ff)
+  )
+  (junction (at 128.905 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid ae142c7a-faac-4a8e-8f7d-6198002e088a)
   )
   (junction (at 325.755 31.75) (diameter 0) (color 0 0 0 0)
     (uuid b05108ab-eca4-403c-a6a4-ce1870e4b990)
@@ -695,6 +777,9 @@
   )
   (junction (at 294.64 53.975) (diameter 0) (color 0 0 0 0)
     (uuid b5cc9061-cef5-4b14-aed5-ecb3266a9891)
+  )
+  (junction (at 38.735 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid b885e806-7310-409b-94f7-5525723fd78d)
   )
   (junction (at 121.285 148.59) (diameter 0) (color 0 0 0 0)
     (uuid bc3dd90e-9d97-4a39-aafa-2c4fd6050435)
@@ -729,6 +814,9 @@
   (junction (at 253.365 17.145) (diameter 0) (color 194 0 0 1)
     (uuid cea62ff2-d13f-4885-9184-63ec5f713012)
   )
+  (junction (at 224.79 163.195) (diameter 0) (color 194 0 0 1)
+    (uuid d0f2a9a8-21fa-4ded-bb12-b79468cd5ac1)
+  )
   (junction (at 121.285 31.75) (diameter 0) (color 0 0 0 0)
     (uuid d13d7b10-a3a0-4dbe-8b2d-3f64d1da6b99)
   )
@@ -738,11 +826,20 @@
   (junction (at 318.135 71.755) (diameter 0) (color 0 0 0 1)
     (uuid d40177e9-8140-43de-b421-488e0b2923c3)
   )
+  (junction (at 160.02 46.355) (diameter 0) (color 194 0 0 1)
+    (uuid d5ddf059-17dd-4f46-ba13-5b74d9d7d07b)
+  )
   (junction (at 287.02 71.755) (diameter 0) (color 0 0 0 1)
     (uuid d82022be-c95a-44ad-8fb8-b0411f208476)
   )
   (junction (at 284.48 17.145) (diameter 0) (color 194 0 0 1)
     (uuid da645634-04ac-48e2-ba87-652fa2f84d31)
+  )
+  (junction (at 131.445 163.195) (diameter 0) (color 194 0 0 1)
+    (uuid db1ff22e-93ba-47f3-b8d0-3e8e9179f6ed)
+  )
+  (junction (at 191.135 161.29) (diameter 0) (color 0 0 0 1)
+    (uuid dbf94a60-1db9-4f1e-be63-75a7ca6df3ff)
   )
   (junction (at 131.445 71.755) (diameter 0) (color 0 0 0 1)
     (uuid dc1d7d95-73e9-44e2-a490-788ceb7959c5)
@@ -798,6 +895,9 @@
   (junction (at 69.215 133.985) (diameter 0) (color 194 0 0 1)
     (uuid f4611747-a7f9-4b3f-bd46-37c448397660)
   )
+  (junction (at 131.445 44.45) (diameter 0) (color 0 0 0 1)
+    (uuid f68715d6-7854-4c1c-b60b-44857a9c5e40)
+  )
   (junction (at 90.17 148.59) (diameter 0) (color 0 0 0 0)
     (uuid fbbcde61-d538-4812-945e-9ee3ffd6622b)
   )
@@ -816,6 +916,10 @@
   (wire (pts (xy 356.87 35.56) (xy 356.87 79.375))
     (stroke (width 0) (type default))
     (uuid 034cc74b-4231-4575-b19d-73cdd472acb7)
+  )
+  (wire (pts (xy 128.905 161.29) (xy 160.02 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 045e90de-f445-45f8-9455-b9dccc60d407)
   )
   (wire (pts (xy 232.41 148.59) (xy 232.41 152.4))
     (stroke (width 0) (type default))
@@ -841,6 +945,10 @@
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid 0df815a5-ff3b-432a-9136-d294e9b32338)
   )
+  (wire (pts (xy 100.33 44.45) (xy 131.445 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 0e4d80b5-ad2d-441a-a3f0-f819320457f4)
+  )
   (wire (pts (xy -353.06 139.065) (xy -353.06 140.335))
     (stroke (width 0) (type default))
     (uuid 0e5a02bd-e164-47f3-903f-b0f006d7ca92)
@@ -853,9 +961,17 @@
     (stroke (width 0) (type default))
     (uuid 12e6e3f6-1c5d-48da-aed5-f9baf8037ba1)
   )
+  (wire (pts (xy 253.365 160.02) (xy 253.365 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 13f38520-5604-4735-85b8-bb2301823ce3)
+  )
   (wire (pts (xy -351.79 280.035) (xy -351.79 290.195))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 14d1224a-0c08-4a7d-9345-5022dee0fac6)
+  )
+  (wire (pts (xy 100.33 44.45) (xy 100.33 71.755))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 1536195b-b2fd-470a-a086-fd90198acc95)
   )
   (wire (pts (xy 191.135 17.145) (xy 191.135 25.4))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -905,6 +1021,10 @@
     (stroke (width 0) (type default))
     (uuid 1d3fde56-1225-4745-83c5-3d8e19fc7bb6)
   )
+  (wire (pts (xy 128.905 160.02) (xy 128.905 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 1d61a2f4-5f39-44b2-84da-00ecf59fd516)
+  )
   (wire (pts (xy 76.835 31.75) (xy 90.17 31.75))
     (stroke (width 0) (type default))
     (uuid 1da4ae96-7011-465d-9156-8018e071e5c7)
@@ -941,12 +1061,16 @@
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid 27b5f11b-628e-42fc-afed-26c9e2e282df)
   )
+  (wire (pts (xy 191.135 161.29) (xy 222.25 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 27d3a62e-fad4-40f6-a09d-8e6ec27b259c)
+  )
   (polyline (pts (xy 360.045 170.815) (xy 345.44 127.635))
     (stroke (width 0) (type default))
     (uuid 283c8ab7-c103-4ca8-95fa-40c9ce78511d)
   )
 
-  (wire (pts (xy 38.735 151.13) (xy 38.735 188.595))
+  (wire (pts (xy 38.735 151.13) (xy 38.735 161.29))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 28aa4cda-8d8f-4984-a50d-247977838232)
   )
@@ -991,6 +1115,10 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 34223fdf-5201-4b68-803c-f55a772e8d6e)
   )
+  (wire (pts (xy 222.25 160.02) (xy 222.25 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 360014c2-8f20-4084-8bfb-d82fc9b76ae5)
+  )
   (wire (pts (xy 152.4 53.975) (xy 152.4 57.785))
     (stroke (width 0) (type default))
     (uuid 39cddba2-4cc7-4662-ad14-e5b41006ad89)
@@ -999,9 +1127,17 @@
     (stroke (width 0) (type default))
     (uuid 39f768ad-5ea4-4069-a962-0f957b64bfc5)
   )
+  (wire (pts (xy 255.905 163.195) (xy 224.79 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 3ae2034a-edd5-4aea-a982-ffb42a5100de)
+  )
   (wire (pts (xy 90.17 148.59) (xy 90.17 152.4))
     (stroke (width 0) (type default))
     (uuid 3be85b56-165b-47e0-ad45-87259d680f8f)
+  )
+  (wire (pts (xy 193.675 163.195) (xy 193.675 164.465))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 3c71afbd-1eb7-4b09-9e70-f23daf2472ee)
   )
   (wire (pts (xy 245.745 148.59) (xy 232.41 148.59))
     (stroke (width 0) (type default))
@@ -1052,6 +1188,10 @@
     (stroke (width 0) (type default))
     (uuid 458cac4a-501e-4925-800c-463ca3dfc5ba)
   )
+  (wire (pts (xy 255.905 44.45) (xy 162.56 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 4637c491-9fc3-45bf-9326-e8179d030181)
+  )
   (wire (pts (xy 232.41 170.815) (xy 232.41 174.625))
     (stroke (width 0) (type default))
     (uuid 465b9fce-55d4-4e7f-9236-1db578046542)
@@ -1063,6 +1203,10 @@
   (wire (pts (xy 325.755 31.75) (xy 339.09 31.75))
     (stroke (width 0) (type default))
     (uuid 47b62d44-29da-44ba-a816-3a26d3426c9a)
+  )
+  (wire (pts (xy 253.365 46.355) (xy 253.365 47.625))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 47f748fe-c1e1-471d-8de9-ec6232bb8902)
   )
   (wire (pts (xy 253.365 188.595) (xy 283.845 188.595))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -1153,6 +1297,10 @@
     (stroke (width 0) (type default))
     (uuid 5b02b904-6148-458c-b9c2-3be92a3cd31d)
   )
+  (wire (pts (xy 162.56 163.195) (xy 162.56 164.465))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 5f459c6f-9308-4297-9bcf-2461943a4548)
+  )
   (wire (pts (xy 160.02 17.145) (xy 160.02 25.4))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid 609b831b-24c1-40c2-a76c-b88d771b01a6)
@@ -1169,6 +1317,14 @@
     (stroke (width 0) (type default))
     (uuid 61de7d61-74d7-4b66-b31a-82e719b2881d)
   )
+  (wire (pts (xy 255.905 164.465) (xy 255.905 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 66132a47-9e75-4136-8dc1-0b8961542b6e)
+  )
+  (wire (pts (xy 56.515 46.355) (xy 128.905 46.355))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 673c3521-7c87-4c0d-a966-9edcc6ea119a)
+  )
   (wire (pts (xy 128.905 17.145) (xy 160.02 17.145))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid 6790414b-8140-4511-aa87-b84743b98d64)
@@ -1176,6 +1332,10 @@
   (wire (pts (xy -359.41 272.415) (xy -365.76 272.415))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid 6814aa8f-51ae-4d4f-8095-efb9d36edafc)
+  )
+  (wire (pts (xy 97.79 160.02) (xy 97.79 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 68261ee0-094f-4f09-bff0-387af99a84a6)
   )
   (wire (pts (xy 349.25 71.755) (xy 349.25 43.18))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -1206,9 +1366,17 @@
     (stroke (width 0) (type default))
     (uuid 6f54b988-d62f-4404-8daf-107624057b0d)
   )
+  (wire (pts (xy 287.02 43.18) (xy 287.02 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 70856292-ca33-4625-9ce4-97ba35bfe2f2)
+  )
   (wire (pts (xy 339.09 31.75) (xy 339.09 35.56))
     (stroke (width 0) (type default))
     (uuid 7392bdc9-5963-4e7d-9e11-02480d69bd9f)
+  )
+  (wire (pts (xy 162.56 44.45) (xy 131.445 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 73b4e860-dc66-4ec4-9d7c-019efe1db4ef)
   )
   (polyline (pts (xy 348.615 126.365) (xy 345.44 127.635))
     (stroke (width 0) (type default))
@@ -1223,7 +1391,7 @@
     (stroke (width 0) (type default))
     (uuid 75cc8b13-570e-4ee5-b372-5a787841eb51)
   )
-  (wire (pts (xy 100.33 43.18) (xy 100.33 71.755))
+  (wire (pts (xy 100.33 43.18) (xy 100.33 44.45))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 762ef481-dba4-4fe9-a756-f407b796be94)
   )
@@ -1231,9 +1399,17 @@
     (stroke (width 0) (type default))
     (uuid 76906ba9-aed5-490d-934e-9d11b7e9d41d)
   )
+  (wire (pts (xy 253.365 46.355) (xy 284.48 46.355))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 76b0dfef-f5de-4590-9ad2-c07732b5a939)
+  )
   (wire (pts (xy 152.4 152.4) (xy 152.4 170.815))
     (stroke (width 0) (type default))
     (uuid 76d770b7-dce7-4e72-a519-3f6675ecca13)
+  )
+  (wire (pts (xy 100.33 163.195) (xy 52.705 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 76dc3654-35ea-4182-bf69-272996e8075f)
   )
   (wire (pts (xy 263.525 53.975) (xy 263.525 57.785))
     (stroke (width 0) (type default))
@@ -1282,6 +1458,10 @@
   (wire (pts (xy 152.4 31.75) (xy 152.4 35.56))
     (stroke (width 0) (type default))
     (uuid 847e1883-88d7-41d7-9b6e-2d79db1ef038)
+  )
+  (wire (pts (xy 128.905 46.355) (xy 128.905 47.625))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 8485b309-fb77-484b-95e3-605b1546a818)
   )
   (wire (pts (xy 139.065 31.75) (xy 152.4 31.75))
     (stroke (width 0) (type default))
@@ -1335,9 +1515,21 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 89280b2b-6573-45fc-be03-2dee89ddcdd4)
   )
+  (wire (pts (xy 160.02 46.355) (xy 160.02 47.625))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 8985a945-919b-46c1-aa9b-4eafde2d4d10)
+  )
   (wire (pts (xy 160.02 188.595) (xy 160.02 182.245))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 89acd909-7fec-4340-8d16-cba386bfb44a)
+  )
+  (wire (pts (xy 224.79 163.195) (xy 193.675 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 89e5984a-b4ed-4f1f-9d9f-80c2a043f25e)
+  )
+  (wire (pts (xy 287.02 44.45) (xy 255.905 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 8c6e5303-5f88-4d6f-89cb-8810a419b869)
   )
   (wire (pts (xy 162.56 71.755) (xy 193.675 71.755))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -1362,6 +1554,10 @@
   (wire (pts (xy 263.525 170.815) (xy 263.525 174.625))
     (stroke (width 0) (type default))
     (uuid 92890641-cab9-4a84-9051-4006d95eb683)
+  )
+  (wire (pts (xy 160.02 160.02) (xy 160.02 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid 94a4fcb8-e322-4768-b6a2-7602ccfc632e)
   )
   (wire (pts (xy 131.445 71.755) (xy 131.445 65.405))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -1395,9 +1591,17 @@
     (stroke (width 0) (type default))
     (uuid 9c203724-f28f-4d40-96a6-5569b2face19)
   )
+  (wire (pts (xy 284.48 47.625) (xy 284.48 46.355))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 9cca9c1d-c55b-41b7-a8ab-fb4bc5e3565e)
+  )
   (wire (pts (xy 183.515 148.59) (xy 183.515 152.4))
     (stroke (width 0) (type default))
     (uuid 9d57265c-fe46-466c-a25b-171e41cc75d8)
+  )
+  (wire (pts (xy 131.445 163.195) (xy 131.445 164.465))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid 9d66eb01-f1a5-479b-ad78-bc31fd6dd223)
   )
   (wire (pts (xy 183.515 170.815) (xy 183.515 174.625))
     (stroke (width 0) (type default))
@@ -1415,6 +1619,10 @@
     (stroke (width 0) (type default))
     (uuid a1253c12-d8bd-4589-9536-25d72d9172ea)
   )
+  (wire (pts (xy 191.135 160.02) (xy 191.135 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid a1984227-7d9e-4062-9291-387795113293)
+  )
   (wire (pts (xy 50.165 89.535) (xy 56.515 89.535))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid a38adaca-a7b8-4eec-a143-dc87868ab9fa)
@@ -1430,6 +1638,10 @@
   (wire (pts (xy 214.63 31.75) (xy 214.63 35.56))
     (stroke (width 0) (type default))
     (uuid a644f578-3327-4095-beb6-a6b5305c7940)
+  )
+  (wire (pts (xy 255.905 43.18) (xy 255.905 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid a65917bf-2e94-45ab-bdec-8b3c1a928933)
   )
   (wire (pts (xy 97.79 17.145) (xy 128.905 17.145))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -1497,6 +1709,10 @@
     (uuid b3b319b7-f43a-4588-b2ec-671b22f4864f)
   )
 
+  (wire (pts (xy 224.79 163.195) (xy 224.79 164.465))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid b3d8f5b7-b48b-42a9-aac0-97279bb34165)
+  )
   (wire (pts (xy 90.17 148.59) (xy 76.835 148.59))
     (stroke (width 0) (type default))
     (uuid b4c3202f-def2-4157-949f-4e2eb911fe60)
@@ -1512,6 +1728,10 @@
   (wire (pts (xy 193.675 43.18) (xy 193.675 71.755))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid b6e2f593-721b-4d77-ace6-8a9d51c93419)
+  )
+  (wire (pts (xy 160.02 161.29) (xy 191.135 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid b6f71597-4bf2-46a8-820d-fd4eefab7ed2)
   )
   (wire (pts (xy 193.675 133.985) (xy 193.675 142.24))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -1541,6 +1761,10 @@
   (wire (pts (xy 263.525 148.59) (xy 276.225 148.59))
     (stroke (width 0) (type default))
     (uuid bc5cbc6b-81b8-4fe2-92f6-9daf3f86678d)
+  )
+  (wire (pts (xy 38.735 161.29) (xy 97.79 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid be768828-5af2-4d4a-8307-b41695640ec6)
   )
   (wire (pts (xy 318.135 71.755) (xy 349.25 71.755))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -1599,6 +1823,10 @@
     (stroke (width 0) (type default))
     (uuid ca349048-c2bf-452b-85df-bf56943abd35)
   )
+  (wire (pts (xy 52.705 163.195) (xy 52.705 133.985))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid ca5cf9e7-5b42-4214-a80c-2d9aa68b2cd6)
+  )
   (polyline (pts (xy 348.615 221.615) (xy 363.22 178.435))
     (stroke (width 0) (type default))
     (uuid cae522eb-0394-48c7-9066-72b48e364909)
@@ -1624,9 +1852,17 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid ceaa161f-29e7-47fb-a967-862425a0ec1c)
   )
+  (wire (pts (xy 128.905 46.355) (xy 160.02 46.355))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid cf28f8d4-4b8c-457f-bb2e-af7c8de648f1)
+  )
   (wire (pts (xy 34.925 89.535) (xy 28.575 89.535))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid cf6b3b73-3b35-4daf-ab48-c108de957a47)
+  )
+  (wire (pts (xy 38.735 161.29) (xy 38.735 188.595))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid d07027d7-cba5-46fe-88d8-78abcf513a9f)
   )
   (wire (pts (xy 28.575 89.535) (xy 15.875 89.535))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -1661,6 +1897,10 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid dbf4a16c-de8d-4298-90cc-e82fdb77a6cf)
   )
+  (wire (pts (xy 131.445 163.195) (xy 100.33 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid dc12bbf8-5e5d-48b7-9c64-af6c4df58647)
+  )
   (wire (pts (xy 201.295 31.75) (xy 201.295 35.56))
     (stroke (width 0) (type default))
     (uuid dd736f35-59c8-4bfd-b713-b949e2982579)
@@ -1681,6 +1921,18 @@
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid df1bba5d-6414-41f7-b74b-5c61c9a5d7b2)
   )
+  (wire (pts (xy 97.79 161.29) (xy 128.905 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid df204ad5-c265-4dc8-ae88-081bba81d097)
+  )
+  (wire (pts (xy 162.56 163.195) (xy 131.445 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid df614a7f-eb2d-49c8-93e4-5235d1502e75)
+  )
+  (wire (pts (xy 100.33 163.195) (xy 100.33 164.465))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid e01308f3-b273-4e61-9d27-5e29e3ab2dba)
+  )
   (wire (pts (xy 107.95 170.815) (xy 107.95 174.625))
     (stroke (width 0) (type default))
     (uuid e055bdb9-b503-4631-99b6-6e864272c2a1)
@@ -1692,6 +1944,14 @@
   (wire (pts (xy 152.4 35.56) (xy 152.4 53.975))
     (stroke (width 0) (type default))
     (uuid e1b28c32-07bc-4620-af4f-15dd6e95d46a)
+  )
+  (wire (pts (xy 52.705 133.985) (xy 69.215 133.985))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid e1eb6759-9b0d-4e5e-a885-a7fa3209f3c0)
+  )
+  (wire (pts (xy 193.675 163.195) (xy 162.56 163.195))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid e2e09aee-3344-4de9-a36f-4687829618c4)
   )
   (wire (pts (xy 346.71 17.145) (xy 346.71 25.4))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -1747,6 +2007,14 @@
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid eec33748-99eb-4f3e-8661-d0303aef0dd9)
   )
+  (wire (pts (xy 162.56 43.18) (xy 162.56 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid ef4c2bbe-c49b-4847-bea6-6c67bbb90496)
+  )
+  (wire (pts (xy 222.25 161.29) (xy 253.365 161.29))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid efa77e20-af44-41cf-a01b-d49cfa6b7cbc)
+  )
   (wire (pts (xy 214.63 170.815) (xy 214.63 174.625))
     (stroke (width 0) (type default))
     (uuid f02c26b5-7af5-40a2-8c9f-b999bc00fad9)
@@ -1756,7 +2024,7 @@
     (uuid f0b92b6f-7837-4268-803f-4bfa8adf0efe)
   )
 
-  (wire (pts (xy 56.515 89.535) (xy 56.515 17.145))
+  (wire (pts (xy 56.515 89.535) (xy 56.515 46.355))
     (stroke (width 0) (type default) (color 194 0 0 1))
     (uuid f1dcdc32-9282-4f78-ad1c-f4570e7fad5c)
   )
@@ -1776,6 +2044,10 @@
     (stroke (width 0) (type default))
     (uuid f650b41a-bc77-43b6-aeb9-a253b759943f)
   )
+  (wire (pts (xy 131.445 43.18) (xy 131.445 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (uuid f68b90c3-febb-44b7-88e1-665f59fb667d)
+  )
   (wire (pts (xy -391.16 139.065) (xy -391.16 140.335))
     (stroke (width 0) (type default))
     (uuid f6a2e63b-81fc-4884-a8d0-6b8606e0f584)
@@ -1788,6 +2060,10 @@
     (stroke (width 0) (type default))
     (uuid fa82e15b-daf6-4b58-a36b-ed39fbecd884)
   )
+  (wire (pts (xy 56.515 46.355) (xy 56.515 17.145))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid facfb11f-3dd2-4e54-afba-26a957805407)
+  )
   (wire (pts (xy 170.18 53.975) (xy 170.18 57.785))
     (stroke (width 0) (type default))
     (uuid fbf8acc8-d2f1-4010-8348-b0dc03b7da32)
@@ -1795,6 +2071,10 @@
   (wire (pts (xy -353.06 132.715) (xy -353.06 133.985))
     (stroke (width 0) (type default))
     (uuid fc8ab51c-5cac-410e-b43c-c0df32e37ff2)
+  )
+  (wire (pts (xy 160.02 46.355) (xy 253.365 46.355))
+    (stroke (width 0) (type default) (color 194 0 0 1))
+    (uuid fce7b8fc-cb76-44dd-a825-6731fcad7fc8)
   )
   (wire (pts (xy 128.905 17.145) (xy 128.905 25.4))
     (stroke (width 0) (type default) (color 194 0 0 1))
@@ -3461,7 +3741,7 @@
     (effects (font (size 3.81 3.81)) (justify left bottom))
     (uuid 0b00301d-ac09-4f53-ad78-299564b520f1)
   )
-  (text "AZ1117\nMax Input Voltage: 18V\nMax Output Current: 1,350mA"
+  (text "L78S05CV\nMax Input Voltage: 35V\nMax Output Current: 2,000mA"
     (at 76.835 107.315 0)
     (effects (font (size 5.08 5.08)) (justify left bottom))
     (uuid 0b75441e-865e-4d96-a2e8-e120f0bd76b3)
@@ -3543,7 +3823,8 @@
     (effects (font (size 3.81 3.81)) (justify left bottom))
     (uuid 7858e350-70aa-497f-a544-c825e9e8c9ee)
   )
-  (text "Each LED: 20mA\n\n1*7 + 2*10 = 27\n\n27*20mA = 540mA" (at 27.94 238.125 0)
+  (text "Each LED: 20mA + 20mA + 20mA = 60mA\n            (R)      (G)      (B)\n\n1*7 + 2*10 = 27 LEDs\n\n27*60mA = 1,620mA"
+    (at 28.575 250.825 0)
     (effects (font (size 5.08 5.08)) (justify left bottom))
     (uuid 89c0a4f0-ca5c-4bba-8145-0f7b36051e4a)
   )
@@ -3725,7 +4006,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 254.635 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09fd5c8b-85f4-4e60-994b-a5f2d3b25ba1)
-    (property "Reference" "D110" (at 254.635 48.895 0)
+    (property "Reference" "D21" (at 254.635 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 254.6551 55.8853 0)
@@ -3746,12 +4027,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D110") (unit 1)
+          (reference "D21") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3760,7 +4041,7 @@
   (symbol (lib_id "Device:C_Small") (at -391.16 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d8b4774-dcd4-47b6-873a-b9b63c037b48)
-    (property "Reference" "C101" (at -388.8359 135.8876 0)
+    (property "Reference" "C1" (at -388.8359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -388.8359 137.8086 0)
@@ -3777,12 +4058,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C101") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C201") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -3791,7 +4072,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 254.635 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 112ebed7-ef28-4101-8616-bdae7c0a9a3c)
-    (property "Reference" "D108" (at 254.635 26.67 0)
+    (property "Reference" "D20" (at 254.635 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 254.6551 33.6603 0)
@@ -3812,12 +4093,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D108") (unit 1)
+          (reference "D20") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3826,7 +4107,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 161.29 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 114964d4-a2d1-433c-896b-2eae839e3fec)
-    (property "Reference" "D121" (at 161.29 143.51 0)
+    (property "Reference" "D12" (at 161.29 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 161.2699 150.5003 0)
@@ -3847,12 +4128,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D121") (unit 1)
+          (reference "D12") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3861,7 +4142,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 28.575 100.965 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1680e3bb-fd32-42f8-83dc-368e55d3b85b)
-    (property "Reference" "C110" (at 25.654 99.6863 0)
+    (property "Reference" "C10" (at 25.654 99.6863 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 25.654 101.6073 0)
@@ -3878,12 +4159,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C110") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C204") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -3892,7 +4173,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 285.75 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2297d0bc-0906-4450-a38d-bd9593b36ce7)
-    (property "Reference" "D111" (at 285.75 26.67 0)
+    (property "Reference" "D24" (at 285.75 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 285.7701 33.6603 0)
@@ -3913,12 +4194,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D111") (unit 1)
+          (reference "D24") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3927,7 +4208,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 130.175 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 284be17c-2a55-4960-a6e3-8b60889c625c)
-    (property "Reference" "D124" (at 130.175 165.735 0)
+    (property "Reference" "D9" (at 130.175 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 130.1549 172.7253 0)
@@ -3948,12 +4229,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D124") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3962,7 +4243,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 161.29 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f4f49c8-fbc2-480b-96cf-696963c73cf7)
-    (property "Reference" "D106" (at 161.29 48.895 0)
+    (property "Reference" "D11" (at 161.29 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 161.3101 55.8853 0)
@@ -3983,12 +4264,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D106") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -3997,7 +4278,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 192.405 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 58cf86fb-74e6-4c37-81cc-6854114e1fa1)
-    (property "Reference" "D107" (at 192.405 26.67 0)
+    (property "Reference" "D14" (at 192.405 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 192.4251 33.6603 0)
@@ -4018,12 +4299,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D107") (unit 1)
+          (reference "D14") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4032,7 +4313,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 23.495 148.59 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 658b393d-e760-440f-8cbb-6d3794b92909)
-    (property "Reference" "J102" (at 26.035 156.21 0)
+    (property "Reference" "J2" (at 26.035 156.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Output" (at 26.035 154.289 0)
@@ -4050,12 +4331,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "J102") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "J202") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
     )
@@ -4064,7 +4345,7 @@
   (symbol (lib_id "Regulator_Linear:AZ1117-5.0") (at -351.79 272.415 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6650d1d1-45df-4e5d-ad71-d002e2a2d282)
-    (property "Reference" "U101" (at -351.79 267.5001 0)
+    (property "Reference" "U1" (at -351.79 267.5001 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AZ1117-5.0" (at -351.79 269.4211 0)
@@ -4082,12 +4363,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "U101") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "U201") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
     )
@@ -4096,7 +4377,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 283.845 177.165 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68a8a56d-17c2-4beb-b71e-1e7cc66f3190)
-    (property "Reference" "H101" (at 286.385 175.2513 0)
+    (property "Reference" "H1" (at 286.385 175.2513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "M4" (at 286.385 177.1723 0)
@@ -4112,44 +4393,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "H101") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "H201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Linear:AZ1117-5.0") (at 42.545 89.535 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 68dba757-0610-4b73-8583-20bc277c7dcc)
-    (property "Reference" "U102" (at 42.545 84.6201 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AZ1117-5.0" (at 42.545 86.5411 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 42.545 83.185 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" (at 42.545 89.535 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1856fefc-86ba-485f-a4f6-615763fa3cf4))
-    (pin "2" (uuid 8779bd1f-2ee0-4aa6-a3d2-ceeabf635751))
-    (pin "3" (uuid c8a94904-bf46-48d0-a9b6-26f6dee1be2d))
-    (instances
-      (project "SixteenSegClock-Main"
-        (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "U102") (unit 1)
-        )
-      )
-      (project "SevenSegClock-Main"
-        (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "U201") (unit 1)
+          (reference "H?") (unit 1)
         )
       )
     )
@@ -4158,7 +4407,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 67.945 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e1ce379-e4fc-4815-a86f-c48c5dfdb84d)
-    (property "Reference" "D101" (at 67.945 26.67 0)
+    (property "Reference" "D1" (at 67.945 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 67.9651 33.6603 0)
@@ -4179,12 +4428,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D101") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4193,7 +4442,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 192.405 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f155697-c566-44cf-aac6-8a6c41b69857)
-    (property "Reference" "D119" (at 192.405 143.51 0)
+    (property "Reference" "D15" (at 192.405 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 192.3849 150.5003 0)
@@ -4214,12 +4463,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D119") (unit 1)
+          (reference "D15") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4228,7 +4477,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 99.06 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6fa899f7-d6ed-43d9-995b-fc12876d1ce3)
-    (property "Reference" "D126" (at 99.06 165.735 0)
+    (property "Reference" "D5" (at 99.06 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 99.0399 172.7253 0)
@@ -4240,21 +4489,21 @@
     (property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/42/WS2813B_Ver.V5_10-20-19.pdf" (at 99.06 173.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e8eca19-6d7d-44b2-8318-d045c03dcffc))
-    (pin "2" (uuid a6d08b95-9d6e-4334-937f-69a3913ba496))
-    (pin "3" (uuid bb2d6289-8225-424a-9860-6fccf38e6a4c))
-    (pin "4" (uuid 0233f5dd-2d65-42e7-b35d-a7031a90b0a8))
-    (pin "5" (uuid b2a163d0-0c31-4d33-a0a9-241f1a59317a))
-    (pin "6" (uuid 0cb4214e-363c-4432-9f55-90180e0a71b1))
+    (pin "1" (uuid 5360b7ac-494f-4991-bb24-79aaa9e9f971))
+    (pin "2" (uuid d797ce87-61ae-427c-b7c6-1a3caf9c0170))
+    (pin "3" (uuid d1a8cf7d-d634-4847-be5c-18956bcd1852))
+    (pin "4" (uuid 85dbbdd5-7eb8-4ed9-8a9c-efc033f9c9bc))
+    (pin "5" (uuid 8b3e25f9-7d6b-4aee-8386-33452c56ee49))
+    (pin "6" (uuid 737f95b5-0191-4f80-9835-b506b9de22d0))
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D126") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4263,7 +4512,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 192.405 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d1155e3-f54b-468b-abb0-a874673cc7c0)
-    (property "Reference" "D120" (at 192.405 165.735 0)
+    (property "Reference" "D16" (at 192.405 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 192.3849 172.7253 0)
@@ -4284,12 +4533,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D120") (unit 1)
+          (reference "D16") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4298,7 +4547,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at -365.76 283.845 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a1b734e-665b-4dd1-8e0d-88c09e1d4193)
-    (property "Reference" "C104" (at -368.681 282.5663 0)
+    (property "Reference" "C4" (at -368.681 282.5663 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at -368.681 284.4873 0)
@@ -4315,12 +4564,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C104") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C204") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4329,7 +4578,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 99.06 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8efa2199-6db0-40a7-b02a-62c91c928f56)
-    (property "Reference" "D125" (at 99.06 143.51 0)
+    (property "Reference" "D4" (at 99.06 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 99.0399 150.5003 0)
@@ -4350,12 +4599,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D125") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4364,7 +4613,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at -337.82 283.845 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 91fe72ea-6145-4203-a404-57e2caa213e9)
-    (property "Reference" "C107" (at -334.899 282.5663 0)
+    (property "Reference" "C7" (at -334.899 282.5663 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at -334.899 284.4873 0)
@@ -4381,12 +4630,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C107") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C207") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4395,7 +4644,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 223.52 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 952b877c-450c-4dc0-8392-e95226f72c39)
-    (property "Reference" "D117" (at 223.52 143.51 0)
+    (property "Reference" "D18" (at 223.52 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 223.4999 150.5003 0)
@@ -4416,12 +4665,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D117") (unit 1)
+          (reference "D18") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4430,7 +4679,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 223.52 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 961da199-1ffe-442c-9a1d-e588c879f589)
-    (property "Reference" "D109" (at 223.52 26.67 0)
+    (property "Reference" "D17" (at 223.52 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 223.5401 33.6603 0)
@@ -4451,12 +4700,39 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D109") (unit 1)
+          (reference "D17") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:L7805") (at 42.545 89.535 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 98427d50-ecd0-48d6-89b6-b426c242a03f)
+    (property "Reference" "U2" (at 42.545 84.6201 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "L78S05CV" (at 42.545 86.5411 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" (at 43.18 93.345 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/e9/be/53/a3/1f/6f/4f/75/CD00000449.pdf/files/CD00000449.pdf/jcr:content/translations/en.CD00000449.pdf" (at 42.545 90.805 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 437997ec-2e91-4b87-9fb4-695ec04138bb))
+    (pin "2" (uuid 210b8f64-74c3-4fb4-ac0b-4ce9ea9a3486))
+    (pin "3" (uuid 279cd89d-d059-4807-ac9a-81d362d85869))
+    (instances
+      (project "SixteenSegClock-Main"
+        (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4465,7 +4741,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 294.64 177.165 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 99665158-f5f0-4581-a50a-44306d1b7478)
-    (property "Reference" "H102" (at 297.18 175.2513 0)
+    (property "Reference" "H2" (at 297.18 175.2513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "M4" (at 297.18 177.1723 0)
@@ -4481,12 +4757,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "H102") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "H202") (unit 1)
+          (reference "H?") (unit 1)
         )
       )
     )
@@ -4495,7 +4771,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 23.495 31.75 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9acf481a-0480-4777-b6de-07b4ea58d5df)
-    (property "Reference" "J101" (at 23.495 24.13 0)
+    (property "Reference" "J1" (at 23.495 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Input" (at 23.495 26.051 0)
@@ -4513,12 +4789,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "J101") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "J201") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
     )
@@ -4527,7 +4803,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 130.175 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a54d60d6-097e-466f-80c2-76237b8afd37)
-    (property "Reference" "D102" (at 130.175 48.895 0)
+    (property "Reference" "D7" (at 130.175 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 130.1951 55.8853 0)
@@ -4548,12 +4824,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D102") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4562,7 +4838,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 130.175 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a7681bbb-0681-4b1c-80ad-12f858b18175)
-    (property "Reference" "D123" (at 130.175 143.51 0)
+    (property "Reference" "D8" (at 130.175 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 130.1549 150.5003 0)
@@ -4583,12 +4859,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D123") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4597,7 +4873,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 130.175 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a9fba17d-ee4f-47ba-92ac-c9bd50591b03)
-    (property "Reference" "D104" (at 130.175 26.67 0)
+    (property "Reference" "D6" (at 130.175 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 130.1951 33.6603 0)
@@ -4618,12 +4894,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D104") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4632,7 +4908,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 36.195 31.75 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid acca50da-a1ac-4c21-9b5b-075064dc9694)
-    (property "Reference" "R101" (at 33.655 25.4 90)
+    (property "Reference" "R1" (at 33.655 25.4 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220Ω" (at 33.655 27.94 90)
@@ -4649,12 +4925,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "R101") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "R201") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -4663,7 +4939,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 254.635 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid acce28aa-21f6-48cd-a3aa-84eb96e3baf7)
-    (property "Reference" "D114" (at 254.635 143.51 0)
+    (property "Reference" "D22" (at 254.635 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 254.6149 150.5003 0)
@@ -4684,12 +4960,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D114") (unit 1)
+          (reference "D22") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4698,7 +4974,7 @@
   (symbol (lib_id "Device:C_Small") (at -353.06 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b3787313-3ebe-4fc8-9f0f-ade19ddcc71f)
-    (property "Reference" "C105" (at -350.7359 135.8876 0)
+    (property "Reference" "C5" (at -350.7359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -350.7359 137.8086 0)
@@ -4715,12 +4991,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C105") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C205") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4729,7 +5005,7 @@
   (symbol (lib_id "Device:C_Small") (at -314.96 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b9f3b49c-5843-429f-928c-91bc11c17776)
-    (property "Reference" "C109" (at -312.6359 135.8876 0)
+    (property "Reference" "C9" (at -312.6359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -312.6359 137.8086 0)
@@ -4746,12 +5022,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C109") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C209") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4760,7 +5036,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 161.29 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be7eca48-fd07-47fa-ae4a-212895dbff73)
-    (property "Reference" "D105" (at 161.29 26.67 0)
+    (property "Reference" "D10" (at 161.29 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 161.3101 33.6603 0)
@@ -4781,12 +5057,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D105") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4795,7 +5071,7 @@
   (symbol (lib_id "Device:C_Small") (at -327.66 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf3d52de-21bf-40d4-bb05-a76e16ad7588)
-    (property "Reference" "C108" (at -325.3359 135.8876 0)
+    (property "Reference" "C8" (at -325.3359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -325.3359 137.8086 0)
@@ -4812,12 +5088,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C108") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C208") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4826,7 +5102,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 285.75 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d443869d-9ecf-4728-9838-88704bbb2cea)
-    (property "Reference" "D112" (at 285.75 48.895 0)
+    (property "Reference" "D25" (at 285.75 48.895 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 285.7701 55.8853 0)
@@ -4847,12 +5123,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D112") (unit 1)
+          (reference "D25") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4861,7 +5137,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 254.635 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d5d98d30-af1f-49d5-8de3-c7933cf4b70a)
-    (property "Reference" "D116" (at 254.635 165.735 0)
+    (property "Reference" "D23" (at 254.635 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 254.6149 172.7253 0)
@@ -4882,12 +5158,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D116") (unit 1)
+          (reference "D23") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4896,7 +5172,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 161.29 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dba6471f-9407-4087-ba15-b713c0286e6d)
-    (property "Reference" "D122" (at 161.29 165.735 0)
+    (property "Reference" "D13" (at 161.29 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 161.2699 172.7253 0)
@@ -4917,12 +5193,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D122") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4931,7 +5207,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 316.865 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e76083f6-01b3-4220-b4db-225a9a88d027)
-    (property "Reference" "D113" (at 316.865 26.67 0)
+    (property "Reference" "D26" (at 316.865 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 316.8851 33.6603 0)
@@ -4952,12 +5228,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D113") (unit 1)
+          (reference "D26") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -4966,7 +5242,7 @@
   (symbol (lib_id "Device:C_Small") (at -378.46 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebc7a209-af2f-420e-9fdb-90447d23123b)
-    (property "Reference" "C102" (at -376.1359 135.8876 0)
+    (property "Reference" "C2" (at -376.1359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -376.1359 137.8086 0)
@@ -4983,12 +5259,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C102") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C202") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -4997,7 +5273,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 67.945 151.13 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec2f0ad7-1288-4915-b283-6236c82ab53d)
-    (property "Reference" "D127" (at 67.945 143.51 0)
+    (property "Reference" "D2" (at 67.945 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 67.9249 150.5003 0)
@@ -5018,12 +5294,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D127") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -5032,7 +5308,7 @@
   (symbol (lib_id "Device:C_Small") (at -340.36 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed9a9247-52fa-4e4a-8310-60655a9d908a)
-    (property "Reference" "C106" (at -338.0359 135.8876 0)
+    (property "Reference" "C6" (at -338.0359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -338.0359 137.8086 0)
@@ -5049,12 +5325,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C106") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C206") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -5063,7 +5339,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 347.98 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f064054b-2086-4365-a590-5e1edd16268e)
-    (property "Reference" "D115" (at 347.98 26.67 0)
+    (property "Reference" "D27" (at 347.98 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 348.0001 33.6603 0)
@@ -5084,12 +5360,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D115") (unit 1)
+          (reference "D27") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -5098,7 +5374,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 99.06 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb0bb223-ee6a-4a40-b892-2ad32b15eb47)
-    (property "Reference" "D103" (at 99.06 26.67 0)
+    (property "Reference" "D3" (at 99.06 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 99.0801 33.6603 0)
@@ -5119,12 +5395,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D103") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -5133,7 +5409,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 56.515 100.965 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbf737f4-2a3c-4ee7-a4da-b4b3c63a3a54)
-    (property "Reference" "C111" (at 59.436 99.6863 0)
+    (property "Reference" "C11" (at 59.436 99.6863 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 59.436 101.6073 0)
@@ -5150,12 +5426,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C111") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C207") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -5164,7 +5440,7 @@
   (symbol (lib_id "LEDs:WS2813B") (at 223.52 173.355 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd4dc31c-d449-41db-8210-e6215fda1e05)
-    (property "Reference" "D118" (at 223.52 165.735 0)
+    (property "Reference" "D19" (at 223.52 165.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2813B" (at 223.4999 172.7253 0)
@@ -5185,12 +5461,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "D118") (unit 1)
+          (reference "D19") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "D201") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -5199,7 +5475,7 @@
   (symbol (lib_id "Device:C_Small") (at -365.76 136.525 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ffb02dbd-6c36-47cb-af9d-051130507157)
-    (property "Reference" "C103" (at -363.4359 135.8876 0)
+    (property "Reference" "C3" (at -363.4359 135.8876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at -363.4359 137.8086 0)
@@ -5216,12 +5492,12 @@
     (instances
       (project "SixteenSegClock-Main"
         (path "/14fdb160-f942-4a72-a8b8-36616f15c028"
-          (reference "C103") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
       (project "SevenSegClock-Main"
         (path "/2a5cec2f-c9dc-4298-92c3-7c4a8539120b/c210f423-f93a-431e-9b1d-29dff8886738"
-          (reference "C203") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
