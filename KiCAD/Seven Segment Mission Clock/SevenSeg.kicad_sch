@@ -3413,7 +3413,7 @@
     (effects (font (size 3.81 3.81)) (justify left bottom))
     (uuid 5b8d5587-81d4-4747-87bd-149f20039458)
   )
-  (text "Each LED: 20mA + 20mA + 20mA = 60mA\n\n7*3 = 21 LEDs\n\n21*60mA = 1,260mA"
+  (text "Each Segment: 20mA + 20mA + 20mA = 60mA\n\n7*3 = 21 LEDs\n\n7*60mA = 420mA"
     (at 16.51 247.65 0)
     (effects (font (size 5.08 5.08)) (justify left bottom))
     (uuid 6ad60194-146e-43dc-8fc7-92bf97667b22)
