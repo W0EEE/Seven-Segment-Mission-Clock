@@ -2331,7 +2331,7 @@
     (uuid 0b00301d-ac09-4f53-ad78-299564b520f1)
   )
   (text "L78S05CV\nMax Input Voltage: 35V\nMax Output Current: 2,000mA"
-    (at -112.395 73.025 0)
+    (at 173.355 248.285 0)
     (effects (font (size 5.08 5.08)) (justify left bottom))
     (uuid 0b75441e-865e-4d96-a2e8-e120f0bd76b3)
   )
