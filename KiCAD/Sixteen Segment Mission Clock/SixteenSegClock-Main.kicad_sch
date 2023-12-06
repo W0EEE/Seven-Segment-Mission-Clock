@@ -4299,7 +4299,7 @@
     (property "Reference" "C2" (at 59.436 97.1463 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22uF" (at 59.436 99.0673 0)
+    (property "Value" "10uF" (at 59.436 99.0673 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 56.515 98.425 0)
